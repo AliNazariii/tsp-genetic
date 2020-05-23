@@ -1,5 +1,5 @@
 import utils
-import tsp
+from tsp import TSP
 
 population_size = 50
 n_generation = 100
@@ -12,7 +12,7 @@ def main():
 
     print("Running Genetic Algorithm on TSP problem with {} cities.".format(len(genes)))
 
-    # result = tsp.run(genes, population_size, n_generation, tournament_size, mutation_rate)
+    result = TSP.run(genes, population_size, n_generation, tournament_size, mutation_rate)
 
     # utils.plot(result['cost'], result['route'])
 
