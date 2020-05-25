@@ -1,11 +1,12 @@
 import utils
 from tsp import TSP
+import sys
 
 population_size = 50
 n_generation = 100
 tournament_size = 20
 mutation_rate = 0.01 
-input_path = './tsp_data.txt'   
+input_path = sys.argv[1]
 
 def main():
     genes = utils.parse_input(input_path)
