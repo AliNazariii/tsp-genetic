@@ -1,12 +1,11 @@
 from chromosome import Chromosome
 from ea import EvolutionaryAlgorithmsInterface
+from population import Population
 
 class TSP(EvolutionaryAlgorithmsInterface):
-    def __init__(self):
-        pass
-
-    def run(self): 
-        pass
+    @staticmethod
+    def run(genes, population_size, n_generation, tournament_size, mutation_rate): 
+        population = Population.initial_population(genes, population_size)
 
     def evolve(self): 
         pass
